@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">DReader</string>
+    <string name="title_home">分类</string>
+    <string name="title_dashboard">书桌</string>
+
+    <string name="title_notifications">我的</string>
+    <string name="mine_top">网易蜗牛登录</string>
+    <string name="mine_top1">网易蜗牛注册</string>
+    <string name="phoneText">手机号</string>
+    <string name="verification">验证码</string>
+    <string name="passwordText">密码</string>
+    <string name="ver_button">获取验证码</string>
+    <string name="passWordHint">请输入密码</string>
+    <string name="phonePage">网易手机账号</string>
+    <string name="next">下一步</string>
+    <string name="w">帐号还没有注册过，现在注册</string>
+    <string name="q">验证码将发送至:</string>
+
+    <string name="passButton">密码登录</string>
+    <string name="verButton">验证码登录</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="forgetPass">忘记密码？</string>
+    <string name="verWordHint">输入验证码</string>
+    <string name="userNum">账号：</string>
+    <string name="detail">详情</string>
+    <string name="emptyCar1">购物车空空如也哦</string>
+    <string name="emptyCar2">快去选择自己喜欢的图书吧</string>
+    <string name="car">购物车</string>
+
+    <string name="pay">待支付</string>
+    <string name="send">待发货</string>
+    <string name="recieve">待收货</string>
+    <string name="critical">评价</string>
+    <string name="after">退款/售后</string>
+
+    <string name="Fav">加入购物车</string>
+    <string name="test">TextView</string>
+    <string name="todo">TODO</string>
+
+    <string name="bookde">书本详情</string>
+    <string name="forgiveWaring">找回密码</string>
+    <string name="newPass">请输入新密码</string>
+    <string name="enNewPass">请在此确认密码</string>
+    <string name="addFav">加入收藏</string>
+    <string name="Fava">收藏</string>
+    <string name="all">总计</string>
+    <string name="num">总量:</string>
+    <string name="allPrice">总价:</string>
+
+    <string name="name">小段</string>
+    <string name="phone">账号：100</string>
+</resources>

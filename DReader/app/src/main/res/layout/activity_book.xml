@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.BookActivity">
+
+    <RelativeLayout
+        android:id="@+id/BookToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#D0595F"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/car"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <bjfu.it.duanyingli.dreader.myweidgets.NumImageView
+            android:id="@+id/carNum1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin"
+            android:onClick="onToCarClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/numcar" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="218dp"
+
+                android:orientation="horizontal"
+                android:radius="20dp">
+
+                <ImageView
+                    android:id="@+id/BPic"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:contentDescription="@string/todo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/bngd"
+                    android:textAlignment="textStart"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin">
+
+                    <TextView
+                        android:id="@+id/BName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/test"
+                        android:textColor="#000000"
+                        android:textSize="23sp" />
+
+                    <TextView
+                        android:id="@+id/Authur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/test"
+                        android:textColor="#288172" />
+
+                    <TextView
+                        android:id="@+id/BPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/test"
+                        android:textColor="#FF8000"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/carBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="start|bottom"
+                        android:text="@string/Fava"
+                        android:textColor="#B89572"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/addTocar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="end"
+                        android:layout_weight="1"
+                        android:background="#D0595F"
+                        android:contentDescription="@string/Fav"
+                        android:onClick="onAddToCarclick"
+                        android:text="@string/Fav"
+                        android:textColor="#FFFFFF" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/margin"
+                android:text="@string/detail"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textVie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="?android:attr/listDivider" />
+
+
+            <TextView
+                android:id="@+id/BDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAF9CF"
+                android:hint="@string/bookde"
+                android:radius="50dp"
+                android:textSize="16sp" />
+
+            <!--            <MultiAutoCompleteTextView-->
+            <!--                android:id="@+id/BDes"-->
+            <!--                android:hint="@string/bookde"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:radius="50dp"-->
+            <!--                android:textSize="16sp"-->
+            <!--                android:background="#FAF9CF"/>-->
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

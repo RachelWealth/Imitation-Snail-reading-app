@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav_graph"
+    app:startDestination="@id/phoneFragment">
+
+    <fragment
+        android:id="@+id/phoneFragment"
+        android:name="bjfu.it.duanyingli.dreader.ui.login.PhoneFragment"
+        android:label="PhoneFragment"
+        tools:layout="@layout/fragment_phone">
+        <action
+            android:id="@+id/action_phoneFragment_to_loginPwdFragment"
+            app:destination="@id/loginPwdFragment" />
+        <action
+            android:id="@+id/action_phoneFragment_to_loginCodeFragment"
+            app:destination="@id/loginCodeFragment" />
+        <action
+            android:id="@+id/action_phoneFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginPwdFragment"
+        android:name="bjfu.it.duanyingli.dreader.ui.login.LoginPwdFragment"
+        android:label="LoginPwdFragment"
+        tools:layout="@layout/fragment_login_pwd">
+        <argument
+            android:name="phone"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_loginPwdFragment_to_forgetFragment"
+            app:destination="@id/forgetFragment" />
+        <action
+            android:id="@+id/action_loginPwdFragment_to_loginCodeFragment"
+            app:destination="@id/loginCodeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginCodeFragment"
+        android:name="bjfu.it.duanyingli.dreader.ui.login.LoginCodeFragment"
+        android:label="fragment_login_code"
+        tools:layout="@layout/fragment_login_code">
+        <argument
+            android:name="phone"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_loginCodeFragment_to_forgetFragment"
+            app:destination="@id/forgetFragment" />
+        <action
+            android:id="@+id/action_loginCodeFragment_to_loginPwdFragment"
+            app:destination="@id/loginPwdFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="bjfu.it.duanyingli.dreader.ui.login.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <argument
+            android:name="phone"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetFragment"
+        android:name="bjfu.it.duanyingli.dreader.ui.login.ForgetFragment"
+        android:label="ForgetFragment"
+        tools:layout="@layout/fragment_forget" >
+        <action
+            android:id="@+id/action_forgetFragment_to_phoneFragment"
+            app:destination="@id/phoneFragment" />
+    </fragment>
+
+</navigation>

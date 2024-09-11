@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/margin"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/carBPic"
+        android:layout_width="176dp"
+        android:layout_height="183dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/bngd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/carBName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_margin="@dimen/margin"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/carBPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#74B84F"
+            android:layout_margin="@dimen/margin"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/carBNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#DD8F2E"
+            android:layout_margin="@dimen/margin"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</LinearLayout>
